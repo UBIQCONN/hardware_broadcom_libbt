@@ -65,4 +65,7 @@ include $(BUILD_SHARED_LIBRARY)
 ifeq ($(TARGET_PRODUCT), evk_7ulp)
     include $(LOCAL_PATH)/conf/fsl/evk_7ulp/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), uti_8mn)
+    include $(LOCAL_PATH)/conf/fsl/uti_8mn/Android.mk
+endif
 endif # BOARD_HAVE_BLUETOOTH_BCM
